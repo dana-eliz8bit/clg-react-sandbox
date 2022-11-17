@@ -1,5 +1,5 @@
 import data from "../../data/food.json";
-import ListItem from "../ListItem/ListItem";
+import ListItem from "../ListItem";
 
 function List() {
   return data.food.map((food) => {
