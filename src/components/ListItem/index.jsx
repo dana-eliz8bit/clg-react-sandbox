@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 function ListItem(props){
   return (
     <div>
@@ -8,6 +10,8 @@ function ListItem(props){
         {props.foodData.rating > 0 ? `${props.foodData.rating}/5` : `No Rating`}
       </h3>
       <p>{props.foodData.description}</p>
+      <Button name="👍" isActive={true} />
+      <Button name="👎" isActive={false} />
     </div>
   );
 }
