@@ -4,7 +4,7 @@ import List from "./components/List";
 const App = () => {
   return (
     <div className="App">
-      <h1>My Food Wish List</h1>
+      <h1>Vegan Food List</h1>
       <List />
     </div>
   );
