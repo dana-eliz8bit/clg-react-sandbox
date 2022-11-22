@@ -52,11 +52,11 @@ const Todo = () => {
   };
 
   // Step 17 - Add a handleClick handler for button
-  const handleClick = (e) => {
-    e.preventDefault();
+  // const handleClick = (e) => {
+  //   e.preventDefault();
 
-    handleToggle(e.currentTarget.id);
-  };
+  //   handleToggle(e.currentTarget.id);
+  // };
 
   return (
     <div className="App">
