@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import FormMessaging from "./formMessaging";
-import styles from "./formMessaging.module.css";
 
 const options = [
   "Design & Branding",
@@ -84,14 +83,14 @@ function EnquiryForm() {
             content="Thanks for your details, we'll be in touch!"
           />
         )}
-        {isSubmitted && (
+        {isSubmitted && !isValid && (
           <FormMessaging
             isError
-            content="Oops, something went wrong, please try again later."
+            content="Please complete all form fields. Ensure a valid email address is provided."
           />
         )}
         {!isSubmitted && !isValid && (
-          <FormMessaging isError content="Please fill in the form" />
+          <FormMessaging isError content="Please complete all form fields." />
         )}
       </form>
     </div>
