@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import EnquiryForm from "./components/enquiryForm";
 
 function App() {
   return (
     <main>
-      <p>Test3</p>
+      <EnquiryForm />
     </main>
   );
 }
